@@ -8,10 +8,8 @@ let rightList = [];
 
 linesArray.forEach((line) => {
     numbersArray = line.split('  ');
-    if (numbersArray.length === 2) {
-        leftList.push(numbersArray[0]);
-        rightList.push(numbersArray[1]);
-    }
+    leftList.push(numbersArray[0]);
+    rightList.push(numbersArray[1]);
 });
 
 leftList.sort((a, b) => a - b);
